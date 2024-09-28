@@ -9,28 +9,28 @@
     <?php 
         // Variable with global scope:
 
-        // $number_x = 10;
+        $number_x = 10;
         
-        // function myTest(){
-        //     echo"<h4><i>Variable number_x inside function is: $number_x</i></h4>";
-        // }
-        // myTest();
+        function myTest(){
+            echo"<h4><i>Variable number_x inside function is: $number_x</i></h4>";
+        }
+        myTest();
 
-        // echo"<h4><i>Variable number_x outside function is:  $number_x</i></h4>" . "<br>";
+        echo"<h4><i>Variable number_x outside function is:  $number_x</i></h4>" . "<br>";
 
         
         // // Variable with local scope:
 
-        // function myTest2(){
-        //     $number_y = 20;
-        //     echo "<h4><i>Variable number_y inside function is: $number_y</i></h4>";
-        // }
+        function myTest2(){
+            $number_y = 20;
+            echo "<h4><i>Variable number_y inside function is: $number_y</i></h4>";
+        }
 
-        // echo "$number_y";
+        echo "$number_y";
 
-        // myTest2();
+        myTest2();
 
-        // echo "<h4><i>Variable number_y inside function is: $number_y</i></h4>";
+        echo "<h4><i>Variable number_y inside function is: $number_y</i></h4>";
 
 
         // PHP the global keyword:
@@ -66,6 +66,7 @@
         keyTest2();
         keyTest2();
         
+        // difference between single and double quotes:
         $myName = 'Linus';
         echo '<h1>Hello $myName </h1>';
         echo "<h1>Hello $myName </h1>";
