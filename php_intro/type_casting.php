@@ -7,6 +7,7 @@
 </head>
 <body>
     <?php
+    
         $x = 5;
         var_dump($x );
         echo"<br>";
