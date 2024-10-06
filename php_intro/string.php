@@ -79,8 +79,38 @@
         echo substr($str1, -4, 3) . '<br>'; // Output: ing
 
         // Use negative length to specify how many characters to omit, starting from the end of the string:
-        echo substr($str1, 4, -1) . '<br>'; // Output: -Mornin
+        echo substr($str1, 4, -1) . '<br>'; // Output: -Morning
+
+
+        /* Escape Character --> To insert characters that are illegal in a string, use an escape character
+                                An escape character is a backslash \ followed by the character you want to insert:
+         */
         
+        // $str3 = 'Every developer should practice clean 'and efficient' code.';
+        // echo $str3; // output: syntax error
+
+        $str3 = "Every developer should practice clean \"and efficient\" code.";
+        echo $str3 . '<br>';
+
+        $my_var = "Hasan";
+        $my_var2 = "Md.Jahid \$my_var";
+        echo $my_var2 . '<br>';
+
+        echo substr($my_var2, 0, -7) . $my_var . '<br>';
+        
+        $place = "Dhaka\nBangladesh";
+        $place2 = "Dhaka\rBangladesh";
+        $is_true = "New\t\tBangladesh";
+        echo $place . "<br>";
+        echo $place2 . "<br>";
+        echo $is_true . "<br>";
+
+        // A backslash followed by three integers will result in a octal value:
+        echo "\112\101\110\111\104" . "<br>";
+
+        // A backslash followed by an 'x' and a hex number represents a hex value:
+        echo "\x4A\x41\x48\x49\x44" . "<br>";
+            
     ?>
 </body>
 </html>
