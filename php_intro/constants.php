@@ -91,9 +91,7 @@
 
         // __NAMESPACE__ If used inside a namespace, the name of the namespace is returned
         namespace myArea;
-        function myDhaka(){
-            return __NAMESPACE__ ;
-        }
+
         
     ?>
 
