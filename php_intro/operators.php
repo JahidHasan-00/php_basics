@@ -179,9 +179,9 @@
     echo $status = empty($user) ? 'anonymous' . '<br>' : 'logged in' . '<br>';
 
     // Null coalescing:
-    echo $user1 = $_GET['user1'] ?? 'anonymous';
+    echo $user1 = $_GET['user1'] ?? 'anonymous' . '<br>';
     //
-    echo $color = $color ?? 'red';
+    echo $color = $color ?? 'red' . '<br>';
 
     ?>
 

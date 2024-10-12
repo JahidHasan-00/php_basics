@@ -212,22 +212,22 @@
         echo '<br>';
 
         // To Cast to NULL use the (unset) statement:
-        $a = (unset) $a;
-        $b = (unset) $b;
-        $c = (unset) $c;
-        $d = (unset) $d;
-        $e = (unset) $e;
+        // $a = (unset) $a;
+        // $b = (unset) $b;
+        // $c = (unset) $c;
+        // $d = (unset) $d;
+        // $e = (unset) $e;
 
-        var_dump($a);
-        echo '<br>';
-        var_dump($b);
-        echo '<br>';
-        var_dump($c);
-        echo '<br>';
-        var_dump($d);
-        echo '<br>';
-        var_dump($e);
-        echo '<br>';
+        // var_dump($a);
+        // echo '<br>';
+        // var_dump($b);
+        // echo '<br>';
+        // var_dump($c);
+        // echo '<br>';
+        // var_dump($d);
+        // echo '<br>';
+        // var_dump($e);
+        // echo '<br>';
 
     ?>
 </body>
